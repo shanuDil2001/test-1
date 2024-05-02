@@ -207,9 +207,9 @@ html{
     transform: scale(1.1);
 }
 
-.google_map{
-    height: 300px;
-    background: violet;
+.google_map iframe{
+    border: 2px solid var(--grayColor);
+    border-radius: 10px;
     flex-grow: 1;
     padding: 5px;
 }
@@ -219,7 +219,8 @@ html{
         width: 300px;
         height: 300px;
         border: 2px solid var(--grayColor);
-        border-radius: 30px;
+        border-radius: 10px;
+        margin: 15px;
     }
 }
 

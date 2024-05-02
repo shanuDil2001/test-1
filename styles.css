@@ -173,19 +173,54 @@ html{
 /* contact */
 #contact{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-#contact .contact_details{
-    flex-grow: 2;
-    border: 1px solid black;
-    box-sizing: border-box;
+.contact_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#contact .google_map{
+.contact_details div{
+    display: flex;
+    align-items: center;
+    background: palegreen;
+    margin: 3px;
+    padding: 5px;
+}
+
+.contact_details div img{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: violet;
+    margin: 5px;
+    padding: 5px;
+}
+
+.contact_details div img:hover{
+    background: var(--whiteColor);
+    transform: scale(1.1);
+}
+
+.google_map{
+    height: 300px;
+    background: violet;
     flex-grow: 1;
-    border: 1px solid black;
-    box-sizing: border-box;
+    padding: 5px;
+}
+
+@media (max-width: 900px){
+    .google_map iframe{
+        width: 300px;
+        height: 300px;
+        border: 2px solid var(--grayColor);
+        border-radius: 30px;
+    }
 }
 
 /* social media links & copyright */
